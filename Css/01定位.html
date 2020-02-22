@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            position: absolute;
+            /* 这里的50%是相对于浏览器窗口，也是父元素 */
+            left: 20%;
+            top: 200px;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+        }
+        .second{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            /* 这里的top和left都是相对于父元素的 */
+            top: 10%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="second">
+
+        </div>
+    </div>
+</body>
+</html>
