@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .move {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            animation: move 2.5s linear infinite;
+        }
+
+        @keyframes move{
+				25%{
+                    left: 400px;
+					transform: scale(1.5);
+				}
+				50%{
+                    top: 400px;
+					transform: scale(1);
+                }
+                75%{
+                    left: 0;
+					transform: scale(1.5);
+                }
+				100%{
+                    top: 0;
+					transform: scale(1);
+				}
+            }
+        .moveRight {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            animation: moveRight 2.5s linear infinite;
+        }
+        @keyframes moveRight{
+            from {left: 0;}
+            to {left: 400px}
+        }
+    </style>
+</head>
+<body>
+    <div class="move"></div>
+    <div class="moveRight"></div>
+</body>
+</html>
