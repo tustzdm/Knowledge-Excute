@@ -7,14 +7,34 @@
     <style>
         .sss {
             width: 0; height: 0;
-            border-color: transparent red blue transparent; /*上下颜色 左右颜色*/
+            border-color: yellow red blue gray; /*上下颜色 左右颜色*/
             border-width: 130px 90px;
             border-style: solid;
         }
+        .box{
+      width:0;
+      height:0;
+      border:10px solid;
+      border-color:transparent transparent red red ;
+    }
     </style>
+    <div id="canvas"></div>
+    <script>
+    var canvas = document.getElementById('canvas');
+     if (canvas.getContext){
+       var ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(75,50);
+        ctx.lineTo(100,75);
+        ctx.lineTo(100,25);
+        ctx.fill();
+     }
+    </script>
+
 </head>
 <body>
-    <div class="sss"></div>
-
+    <div class="sss" onclick="console.log('sssss')"></div>
+    <div class="box"></div>
+    <canvas id="canvas"></canvas>
 </body>
 </html>
